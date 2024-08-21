@@ -45,7 +45,9 @@ module.exports = {
     "@stylistic/js/comma-spacing": [
       "warn",
       { "before": false, "after": true }],
-    "@stylistic/js/indent": "warn",
+    "@stylistic/js/indent": ["warn", {
+            "SwitchCase": 1
+    }],
     "@stylistic/js/padding-line-between-statements": [
       "warn",
       { "blankLine": "always", "prev": ["block", "block-like", "let", "const", "function"], "next": ["return", "block", "block-like"] },
